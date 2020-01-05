@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.gaohui.android_pulltorefresh_recyclerview">
 
     <application
@@ -8,13 +9,55 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.handmark.pulltorefresh.samples.LauncherActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.handmark.pulltorefresh.samples.PullToRefreshListActivity"
+            android:label="PtR ListView" >
+        </activity>
+        <activity
+            android:name="com.handmark.pulltorefresh.samples.PullToRefreshListFragmentActivity"
+            android:label="PtR ListView Fragment" >
+        </activity>
+        <activity
+            android:name="com.handmark.pulltorefresh.samples.PullToRefreshListInViewPagerActivity"
+            android:label="PtR ListView in ViewPager" >
+        </activity>
+        <activity
+            android:name="com.handmark.pulltorefresh.samples.PullToRefreshGridActivity"
+            android:label="PtR GridView" >
+        </activity>
+        <activity
+            android:name="com.handmark.pulltorefresh.samples.PullToRefreshExpandableListActivity"
+            android:label="PtR ExpandableListView" >
+        </activity>
+        <activity
+            android:name="com.handmark.pulltorefresh.samples.PullToRefreshWebViewActivity"
+            android:label="PtR WebView" >
+        </activity>
+        <activity
+            android:name="com.handmark.pulltorefresh.samples.PullToRefreshScrollViewActivity"
+            android:label="PtR ScrollView" >
+        </activity>
+        <activity
+            android:name="com.handmark.pulltorefresh.samples.PullToRefreshHorizontalScrollViewActivity"
+            android:label="PtR HorizontalScrollView" >
+        </activity>
+        <activity
+            android:name="com.handmark.pulltorefresh.samples.PullToRefreshViewPagerActivity"
+            android:label="PtR ViewPager" >
+        </activity>
+        <activity
+            android:name="com.handmark.pulltorefresh.samples.PullToRefreshWebView2Activity"
+            android:label="PtR WebView Advanced" >
         </activity>
     </application>
 
